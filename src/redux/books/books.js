@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { addBookServer, removeBookServer } from '../../services/bookstore';
+import { addBookServer, getInitialBooks, removeBookServer } from '../../services/bookstore';
 
 // Inital State
 const initialState = [];
@@ -7,8 +7,18 @@ const initialState = [];
 // Actions types
 const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
+const INIT_BOOKS = 'bookStore/books/INIT_BOOK';
 
 // Action Creators
+export const addInitialBooks = () => async (dispatch) => {
+  const books = await getInitialBooks();
+
+  dispatch({
+    type: INIT_BOOKS,
+    payload: books,
+  });
+};
+
 export const addBookAction = (title, category) => async (dispatch) => {
   const newBook = {
     title,
@@ -38,6 +48,8 @@ export const removeBookAction = (id) => async (dispatch) => {
 // Reducers
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
+    case INIT_BOOKS:
+      return [...state, action.payload];
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
