@@ -8,11 +8,11 @@ const ADD_BOOK = 'bookStore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 // Action Creators
-export const addBookAction = (title, category) => ({
+export const addBookAction = (title, author) => ({
   type: ADD_BOOK,
   payload: {
     title,
-    category,
+    author,
     item_id: uuidv4(),
   },
 }
