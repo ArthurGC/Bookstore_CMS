@@ -3,7 +3,7 @@ import React from 'react';
 const AddBook = () => (
   <form>
     <input name="title" placeholder="Add a title book" />
-    <select>
+    <select defaultValue="category">
       <option value="category" disabled>Category</option>
       <option value="technology">Technology</option>
       <option value="fiction">Fiction</option>
