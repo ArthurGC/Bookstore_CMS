@@ -1,8 +1,11 @@
 import React from 'react';
+import AddBook from './AddBook';
+import BookList from './BookList';
 
 const MainBooks = () => (
-  <div>
-    It is the main container of books
+  <div className="mainbook__container">
+    <BookList />
+    <AddBook />
   </div>
 );
 
