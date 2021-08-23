@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBookAction } from '../../redux/books/books';
 
-const Book = ({ title, author, id }) => {
+const Book = ({ title, category, id }) => {
   const dispatch = useDispatch();
 
   const removeBookfromStore = (id) => {
@@ -13,7 +13,7 @@ const Book = ({ title, author, id }) => {
   return (
     <div className="book__container">
       <div className="description">
-        <p className="category">{author}</p>
+        <p className="category">{category}</p>
         <p className="title">{title}</p>
         <button type="button" className="comments">Comments</button>
         <button type="button" className="remove" onClick={() => removeBookfromStore(id)}>Remove</button>
@@ -24,7 +24,7 @@ const Book = ({ title, author, id }) => {
       </div>
       <div className="update">
         <p className="current">CURRENT CHAPTER</p>
-        <p className="chapter">Chapter 17</p>
+        <p className="chapter">Chapter 1</p>
         <button type="button" className="updating">UPDATE PROGRESS</button>
       </div>
     </div>
@@ -33,7 +33,7 @@ const Book = ({ title, author, id }) => {
 
 Book.propTypes = {
   title: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
+  category: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
 

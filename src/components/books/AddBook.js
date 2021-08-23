@@ -9,18 +9,17 @@ const AddBook = () => {
   const submitBooktoStore = (e) => {
     e.preventDefault();
     const title = e.target.title.value;
-    const author = e.target.author.value;
+    const category = e.target.category.value;
     e.target.title.value = '';
-    e.target.author.value = '';
-    dispatch(addBookAction(title, author));
+    e.target.category.value = 'technology';
+    dispatch(addBookAction(title, category));
   };
 
   return (
     <form onSubmit={submitBooktoStore}>
       <input name="title" placeholder="Add a book" />
-      <input name="author" placeholder="Add a author" />
-      <select defaultValue="category">
-        <option value="category" disabled>Category</option>
+      <select name="category" defaultValue="technology">
+        <option value="category:" disabled>Category</option>
         {options.map((option) => (
           <option
             key={option.id}
