@@ -1,9 +1,12 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import useBooks from '../../hooks/useBooks';
 import Book from './Book';
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
+
+  useBooks();
 
   return (
     <ul className="booklist__container">
