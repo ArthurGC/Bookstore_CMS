@@ -1,24 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
 const BookList = () => {
-  const store = [
-    {
-      title: 'Book Test 1',
-      category: 'Technology',
-      item_id: '1',
-    },
-    {
-      title: 'Book Test 2',
-      category: 'Technology',
-      item_id: '2',
-    },
-  ];
+  const books = useSelector((state) => state.books);
+
   return (
     <ul className="booklist__container">
-      {store.map((book) => (
+      {books.map((book) => (
         <li key={book.item_id}>
-          <Book title={book.title} category={book.category} />
+          <Book title={book.title} author={book.author} id={book.item_id} />
         </li>
       ))}
     </ul>
