@@ -12,7 +12,6 @@ const INIT_BOOKS = 'bookStore/books/INIT_BOOK';
 // Action Creators
 export const addInitialBooks = () => async (dispatch) => {
   const books = await getInitialBooks();
-
   dispatch({
     type: INIT_BOOKS,
     payload: books,
@@ -49,7 +48,7 @@ export const removeBookAction = (id) => async (dispatch) => {
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case INIT_BOOKS:
-      return [...state, action.payload];
+      return [...action.payload];
     case ADD_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
