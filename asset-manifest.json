@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/bookstore-project/static/css/main.c20a55bf.chunk.css",
+    "main.js": "/bookstore-project/static/js/main.35c2f142.chunk.js",
+    "main.js.map": "/bookstore-project/static/js/main.35c2f142.chunk.js.map",
+    "runtime-main.js": "/bookstore-project/static/js/runtime-main.a0db3443.js",
+    "runtime-main.js.map": "/bookstore-project/static/js/runtime-main.a0db3443.js.map",
+    "static/js/2.174a5fe7.chunk.js": "/bookstore-project/static/js/2.174a5fe7.chunk.js",
+    "static/js/2.174a5fe7.chunk.js.map": "/bookstore-project/static/js/2.174a5fe7.chunk.js.map",
+    "index.html": "/bookstore-project/index.html",
+    "static/css/main.c20a55bf.chunk.css.map": "/bookstore-project/static/css/main.c20a55bf.chunk.css.map",
+    "static/js/2.174a5fe7.chunk.js.LICENSE.txt": "/bookstore-project/static/js/2.174a5fe7.chunk.js.LICENSE.txt",
+    "static/media/userIcon.3210709b.svg": "/bookstore-project/static/media/userIcon.3210709b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0db3443.js",
+    "static/js/2.174a5fe7.chunk.js",
+    "static/css/main.c20a55bf.chunk.css",
+    "static/js/main.35c2f142.chunk.js"
+  ]
+}
