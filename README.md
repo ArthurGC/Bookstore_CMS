@@ -7,7 +7,7 @@ In this project, I set up my Bookstore project. It is about making a Bookstore w
 
 ## :red_circle: Live Demo
 
-- Under construction
+- [Preview Link](https://arthurgc.github.io/bookstore-project/#/)
 ## :hammer: Built With
 
 - REACT and REDUX.
