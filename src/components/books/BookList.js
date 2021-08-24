@@ -9,8 +9,8 @@ const BookList = () => {
   useBooks();
 
   return (
-    <div className="px-8 sm:px-16 lg:px-24 xl:px-28 bg-backg py-9">
-      <ul className="container mx-auto lg:max-h-5/8 overflow-y-auto">
+    <div className="px-8 sm:px-16 lg:px-24 xl:px-28 2xl:px-40 bg-backg py-9">
+      <ul className="booklist__container container mx-auto lg:overflow-y-auto">
         {books.map((book) => (
           <li
             key={book.item_id}
