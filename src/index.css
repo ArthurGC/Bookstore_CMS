@@ -1,1 +1,88 @@
-/* Styles */
+/* ./src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+#root {
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.active-link {
+  @apply text-opacity-100;
+}
+
+.wrapper {
+  position: relative;
+  width: 84px;
+  height: 68px;
+  margin: 5px;
+}
+
+.arc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border: 5px solid;
+}
+
+.arc_end {
+  border-color: #0290ff #0290ff #0290ff transparent;
+  transform: rotate(45deg);
+  z-index: 100;
+}
+
+.arc_start {
+  border-color: transparent #e8e8e8 #e8e8e8 #e8e8e8;
+  transform: rotate(45deg);
+  z-index: 50;
+}
+
+.booklist__container::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+.booklist__container::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+.booklist__container::-webkit-scrollbar-thumb {
+  background-color: #0290ff;
+  background-image:
+    -webkit-gradient(
+      linear,
+      0 0,
+      0 100%,
+      color-stop(0.5, rgba(255, 255, 255, 0.2)),
+      color-stop(0.5, transparent),
+      to(transparent)
+    );
+}
+
+@media (min-height: 720px) and (min-width: 1024px) {
+  .booklist__container {
+    max-height: 370px;
+  }
+}
+
+@media (min-height: 1024px) and (min-width: 1280px) {
+  .booklist__container {
+    max-height: 580px;
+  }
+}
+
+@media (min-height: 900px) and (min-width: 1440px) {
+  .booklist__container {
+    max-height: 580px;
+  }
+}
