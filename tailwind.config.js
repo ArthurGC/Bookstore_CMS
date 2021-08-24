@@ -16,6 +16,14 @@ module.exports = {
         input: '#c4c4c4',
       }
     },
+    maxHeight: {
+      '0': '0',
+      '1/4': '25vh',
+      '1/2': '50vh',
+      '5/8': '54vh',
+      '3/4': '75vh',
+      'full': '100vh',
+     }
   },
   variants: {
     extend: {},

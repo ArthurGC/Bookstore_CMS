@@ -10,11 +10,11 @@ const BookList = () => {
 
   return (
     <div className="px-8 sm:px-16 lg:px-24 xl:px-28 bg-backg py-9">
-      <ul className="container mx-auto">
+      <ul className="container mx-auto lg:max-h-5/8 overflow-y-auto">
         {books.map((book) => (
           <li
             key={book.item_id}
-            className="bg-white px-7 py-8 rounded mb-4"
+            className="bg-white px-7 py-7 rounded mb-4"
           >
             <Book title={book.title} category={book.category} id={book.item_id} />
           </li>
