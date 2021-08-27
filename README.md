@@ -17,7 +17,7 @@ In this project, I set up my Bookstore project. It is about making a Bookstore w
 
 To get a local copy up and running follow these simple steps:
 
-1. Go to the [repository page](https://github.com/ArthurGC/bookstore-project/tree/init-components).
+1. Go to the [repository page](https://github.com/ArthurGC/Bookstore_CMS).
 2. Press the "Code" button and copy the link.
 3. Clone it using git command `git clone <link>`.
 4. Run `npm install` to install the packages and dependencies.
@@ -42,7 +42,7 @@ To run the tests:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ArthurGC/bookstore-project/issues).
+Feel free to check the [issues page](https://github.com/ArthurGC/Bookstore_CMS/issues).
 
 ## :grey_exclamation: Acknowledgments
 
