@@ -4,10 +4,13 @@
 
 In this project, I set up my Bookstore project. It is about making a Bookstore with 2 section BOOKS and CATEGORIES (styles and functionality with REACT). This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Screenshot
+
+![Bookstore Preview](src/Assets/Bookstore_preview_2.png)
 
 ## :red_circle: Live Demo
 
-- [Preview Link](https://arthurgc.github.io/bookstore-project/#/)
+- [Preview Link](https://arthurgc.github.io/Bookstore_CMS/)
 ## :hammer: Built With
 
 - REACT and REDUX.
